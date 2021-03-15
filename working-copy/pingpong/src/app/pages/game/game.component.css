@@ -1,0 +1,27 @@
+.game {
+  height: 50%;
+  width: 50%;
+  background-color: white;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serving {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  padding: 10px;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

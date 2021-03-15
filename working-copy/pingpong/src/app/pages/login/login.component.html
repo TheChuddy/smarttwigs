@@ -1,0 +1,39 @@
+<div class="centered-content">
+  <div class="login">
+    <h1>Select Players</h1>
+    <input #player1 type="text" id="player1" placeholder="choose player 1" />
+    <div class="register-login">
+      <button
+        class="register"
+        id="player1-reg"
+        (click)="register(player1.value, 1)"
+      >
+        Register
+      </button>
+      <button class="log" id="player1-log" (click)="login(player1.value, 1)">
+        Login
+      </button>
+    </div>
+    <input #player2 type="text" id="player2" placeholder="choose player 2" />
+    <div class="register-login">
+      <button
+        class="register"
+        id="player2-reg"
+        (click)="register(player2.value, 2)"
+      >
+        Register
+      </button>
+      <button class="log" id="player2-log" (click)="login(player2.value, 2)">
+        Login
+      </button>
+    </div>
+    <div class="select-serve">
+      <p>Select player to serve</p>
+      <button (click)="selectPlayer(1)">Player 1</button>
+      <button (click)="selectPlayer(2)">Player 2</button>
+    </div>
+    <button class="start" *ngIf="readyToPlay" (click)="start()">
+      Start Game
+    </button>
+  </div>
+</div>

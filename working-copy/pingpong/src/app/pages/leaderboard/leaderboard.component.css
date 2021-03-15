@@ -1,0 +1,21 @@
+.leaderboard {
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leader-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.headers {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}

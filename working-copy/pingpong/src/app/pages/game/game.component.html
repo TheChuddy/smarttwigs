@@ -1,0 +1,36 @@
+<div class="centered-content">
+  <div class="game">
+    <div class="serving">
+      <div>
+        <span>Serving:</span>
+        <span>{{ serving }}</span>
+      </div>
+      <div>
+        <span>Round:</span>
+        <span>{{ round }}</span>
+      </div>
+    </div>
+    <h1 *ngIf="win">Player {{ winningPlayer }} Wins!</h1>
+    <div class="scores">
+      <div class="p1">
+        <h3>Player1</h3>
+        <h1>{{ player1Score }}</h1>
+        <button (click)="score(1)" *ngIf="!win">Player 1 scores</button>
+      </div>
+      <h3>VS</h3>
+      <div class="p2">
+        <h3>Player2</h3>
+        <h1>{{ player2Score }}</h1>
+        <button (click)="score(2)" *ngIf="!win">Player 2 scores</button>
+      </div>
+    </div>
+    <div>
+      <div>
+        <button class="leaders" *ngIf="win" routerLink="/leaderboard">
+          Go To Leaderboard
+        </button>
+      </div>
+      <button class="end" routerLink="">End Game</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="centered-content">
+  <div class="leaderboard">
+    <h1>Leaderboard</h1>
+    <div class="leaders">
+      <div class="leader-item headers">
+        <span>Player Name</span>
+        <span>Wins</span>
+        <span>Cumulative Points</span>
+      </div>
+      <div class="leader-item" *ngFor="let player of players">
+        <span>{{ player.name }}</span>
+        <span>{{ player.wins }}</span>
+        <span>{{
+          player.cumulativePoints / player.wins | number: "1.0-0"
+        }}</span>
+      </div>
+    </div>
+    <button routerLink="">New Game</button>
+  </div>
+</div>

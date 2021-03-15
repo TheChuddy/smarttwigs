@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap");
+
+html {
+  background-color: aquamarine;
+  height: 100%;
+
+  font-family: Lato;
+}
+
+body {
+  height: 100%;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
